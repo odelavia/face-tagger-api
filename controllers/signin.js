@@ -5,12 +5,12 @@ const keys = require('../config/keys');
 const redis = require('redis');
 // You will want to update your host to the proper address in production
 let redisClient;
-// if (keys.REDIS_URL) {
-  // redisClient = redis.createClient({url: keys.REDIS_URL});
-  redisClient = redis.createClient({ (keys.REDIS_URL) ? (url: keys.REDIS_URL) : (host: keys.REDIS_HOST) });
-// } else {
-  // redisClient = redis.createClient({host: keys.REDIS_HOST });
-// }
+if (keys.REDIS_URL) {
+  redisClient = redis.createClient({url: keys.REDIS_URL});
+  // redisClient = redis.createClient({ (keys.REDIS_URL) ? (url: keys.REDIS_URL) : (host: keys.REDIS_HOST) });
+} else {
+  redisClient = redis.createClient({host: keys.REDIS_HOST });
+}
 
 const signToken = (username) => {
   const jwtPayload = { username };
