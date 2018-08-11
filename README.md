@@ -1,4 +1,7 @@
-# face-tagger-api
+# face-tagger-api 
+# (MOVED THESE FILES INTO THE FACE-TAGGER CLIENT ROOT, NO LONGER MAINTAINING THIS REPO)
+# https://github.com/odelavia/face-tagger-app
+
 You'll need to also clone and run the front-end for this app. It can be found at https://github.com/odelavia/face-tagger-app
 
 1. Clone this repo
