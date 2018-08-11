@@ -1,5 +1,5 @@
 module.exports = {
-    ClarifaiApiKey: process.env.CLARIFAI_API_KEY,
+    ClarifaiApiKey: process.env.ClarifaiApiKey,
     DB: process.env.DATABASE_URL,
     JWT: process.env.JWT,
     Redis_URL: process.env.REDIS_URL
