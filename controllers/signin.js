@@ -4,7 +4,7 @@ const keys = require('../config/keys');
 // Redis Setup
 const redis = require('redis');
 // You will want to update your host to the proper address in production
-const redisClient = redis.createClient({host: keys.Redis_URL});
+const redisClient = redis.createClient({URL: keys.Redis_URL});
 
 const signToken = (username) => {
   const jwtPayload = { username };
